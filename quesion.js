@@ -187,7 +187,7 @@ for (const i in QuestionFu.pilgan) {
       </div>
       <div class="jawaban" id="salah${i}" style='display: none;'>
         <div class="animasi" id="animasi-salah${i}"></div>
-        <div class="answer">Salah sekali</div>
+        <div class="answer">Asu lu!</div>
       </div>`;
 
   pilgan.innerHTML += element
@@ -210,8 +210,9 @@ function cekJawaban(jawaban, id, answer) {
   const buttonElements = document.getElementsByTagName('button');
   for (let i = 0; i < buttonElements.length; i++) {
     buttonElements[i].disabled = true;
-    
+    // const valB = buttonElements[i].textContent
   }
+
 }
 
 
