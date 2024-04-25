@@ -22,4 +22,19 @@
     cursor: pointer; /* Mengubah kursor menjadi pointer ketika diarahkan ke tombol */
     /* transition: background-color 0.3s, color 0.3s; Transisi perubahan warna latar belakang dan teks tombol */
   }
-  
+  .box-span-puzzle {
+    display: inline-block; /* Mengubah span menjadi kotak dengan ukuran yang sesuai */
+    padding: 10px; /* Padding di dalam kotak */
+    background-color: #1E90FF; /* Warna latar belakang kotak */
+    border: 1px solid #ccc; /* Border kotak */
+    border-radius: 5px; /* Membuat sudut kotak menjadi melengkung */
+    color: whitesmoke;
+  }
+  .in-box-puzzle{
+    width: 80px;
+    display: inline-block;
+    padding: 10px;
+    background-color: floralwhite;
+    border: 1px solid aqua;
+    border-radius: 5px;
+  }
