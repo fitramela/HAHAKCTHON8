@@ -183,6 +183,7 @@ for (const i in QuestionFu.pilgan) {
         <div class="animasi" id="animasi-salah${i}"></div>
         <div class="answer">Salah sekali</div>
       </div>`;
+      
 
   answerElement.innerHTML += element
 }
