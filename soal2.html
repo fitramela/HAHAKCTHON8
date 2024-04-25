@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="soal" id="soal">
+
+        </div>
+        <div class="pilihan" id="tombol">
+
+        </div>
+    </div>
+    <script>
+        let quesion = ["satu", "dua", "tiga"];
+        let tampQuesion = [];
+
+        function updateFilter() {
+            let filteredArray = quesion.filter(item => !tampQuesion.includes(item));
+            console.log(filteredArray);
+            let tombol = document.getElementById('tombol')
+            tombol.innerHTML = "";
+
+            for (const i in filteredArray) {
+                let item = `<button type="button" id="pilihan${i}" onclick="updateQuesion('${filteredArray[i]}')" class="btn m-2">${filteredArray[i]}</button>`;
+                tombol.innerHTML += item;
+            }
+        }
+
+        function updateQuesion(item) {
+            if (!tampQuesion.includes(item)) {
+                tampQuesion.push(item);
+            } else {
+                tampQuesion = tampQuesion.filter(elem => elem !== item);
+            }
+            console.log(tampQuesion);
+            let soal = document.getElementById('soal')
+            soal.innerHTML = "";
+
+            for (const i in tampQuesion) {
+                let item = `<button type="button" id="jawaban${i}" onclick="pilihan2(${i})" class="btn m-2">${tampQuesion[i]}</button>`;
+                soal.innerHTML += item;
+            }
+        }
+
+        function pilihan(id) {
+            let pilihan = document.getElementById('pilihan' + id);
+            let dipilih = pilihan.textContent;
+            tampQuesion.push(dipilih);
+            updateQuesion(dipilih);
+        }
+
+        function pilihan2(id) {
+            
+            let terpilih = tampQuesion[id];
+            tampQuesion = tampQuesion.filter(item => item !== terpilih);
+            console.log(tampQuesion)
+            updateQuesion();
+        }
+
+        updateFilter();
+
+
+        // let array1 = [1, 2, 3, 4, 5];
+        // let array2 = [2, 4, 6];
+
+        // let filter2 = array1.filter(item => !array2.includes(item));
+
+        // console.log(filter2);
+
+        // setTimeout(function() {
+        //     console.log("nunggu");
+        //   }, 3000);
+
+
+    </script>
+</body>
+
+</html>
