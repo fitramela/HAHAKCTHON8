@@ -1,0 +1,25 @@
+#transparent-buttonpuzzle {
+    padding: 17px 30px; /* Padding di dalam tombol */
+    background-color: rgba(0, 0, 0, 0); /* Warna latar belakang transparan */
+    color: #333; /* Warna teks tombol */
+    border: 2px solid 	#1E90FF; /* Border dengan warna solid */
+    border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi pointer ketika diarahkan ke tombol */
+    transition: background-color 0.3s, color 0.3s; /* Transisi perubahan warna latar belakang dan teks tombol */
+  }
+  
+  #transparent-button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Warna latar belakang transparan saat dihover */
+    color: #555; /* Warna teks tombol saat dihover */
+  }
+
+  #transparent-buttonpuzzle-answer {
+    padding: 8px 25px; /* Padding di dalam tombol */
+    background-color: #1E90FF ; /* Warna latar belakang transparan */
+    color: whitesmoke; /* Warna teks tombol */
+    border: 2px solid 	#1E90FF; /* Border dengan warna solid */
+    border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi pointer ketika diarahkan ke tombol */
+    /* transition: background-color 0.3s, color 0.3s; Transisi perubahan warna latar belakang dan teks tombol */
+  }
+  

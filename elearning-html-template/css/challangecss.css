@@ -1,0 +1,51 @@
+#container-challange {
+    width: 80%; /* Lebar kontainer 80% dari lebar layar */
+    max-width: 1200px; /* Maksimum lebar kontainer */
+    margin: 0 auto; /* Mengatur margin atas dan bawah menjadi 0 dan otomatis mengatur margin kiri dan kanan agar kontainer berada di tengah */
+    padding: 20px; /* Padding di dalam kontainer */
+    background-color: #f0f0f0; /* Warna latar belakang kontainer */
+    border-radius: 10px; /* Membuat sudut kontainer menjadi melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan kedalaman */
+  }
+  
+  /* Style untuk teks di dalam kontainer */
+  #container-challange h1 {
+    color: #333; /* Warna teks */
+  }
+  
+  #container-challange p {
+    color: #666; /* Warna teks */
+    line-height: 1.6; /* Tinggi baris */
+  }
+  .button-group {
+    display: flex; /* Mengatur tata letak menjadi flexbox */
+    flex-direction: column; /* Mengatur tata letak menjadi vertikal (ke bawah) */
+  }
+  
+  .button-group button {
+    padding: 10px 20px; /* Padding di dalam tombol */
+    margin-bottom: 10px; /* Margin antara tombol */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi pointer ketika diarahkan ke tombol */
+    transition: background-color 0.3s; /* Animasi perubahan warna latar belakang tombol */
+  }
+  
+  
+
+  .button-group button:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat dihover */
+  }
+
+    #button-group-benar {
+    background-color:#32a852;
+  }
+  
+  .button-group button:active {
+    transform: translateY(2px); /* Efek transisi ketika tombol ditekan */
+  }
+  .btn-benar button:hover{
+    background-color: #333;
+  }
