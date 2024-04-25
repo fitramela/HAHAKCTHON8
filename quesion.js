@@ -143,7 +143,7 @@ const Question = () => {
       pilgan: [`The setter input argument should be called num.`, `There is nothing wrong with the method.`, `The _num key should not have an underscore (_) in it.`]
     },
   ]
-  index = getRandomIndex(Q.length)
+  let index = getRandomIndex(Q.length)
   return Q[index]
 }
 
@@ -183,7 +183,7 @@ for (const i in QuestionFu.pilgan) {
         <div class="animasi" id="animasi-salah${i}"></div>
         <div class="answer">Salah sekali</div>
       </div>`;
-      
+
 
   answerElement.innerHTML += element
 }
@@ -214,3 +214,18 @@ function salah(){
     path: 'anim/Animation - 1713954478607.json'
   });
 }
+
+// let js = localStorage.setItem("js", 0)
+// let ds = localStorage.setItem("ds", 0)
+
+// let scoreJs = localStorage.getItem("js") // 1
+// let scoreds = localStorage.getItem("js") // 1
+
+// if (index % 2 !== 0){
+//   scoreJs += 1 //2
+//   localStorage.setItem("js", scoreJs)
+// } else {
+//   scoreds += 1 //2
+//   localStorage.setItem("js", scoreds)
+// }
+
