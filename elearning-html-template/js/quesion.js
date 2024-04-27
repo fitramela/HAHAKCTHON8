@@ -120,7 +120,7 @@ let Qjs = [
   { // ini ds
     question: `Which are the 2 approaches of Data Analysis?`,
     kata: `pilih jawaban anda`,
-    answer: `Historical Data & Experimentation `,
+    answer: `Historical Data & Experimentation`,
     pilgan: [`Historical Data & Graphical Data Analysis`, `Historical Data & Experimentation`, `Experimentation & Regression Analysis`, `Experimentation & Hypothesis Testing`]
   }, 
   {
@@ -180,11 +180,14 @@ function dataBase() {
   // }
   if (scoreJs + scoreDs >= 10) {
     if (scoreJs > scoreDs) {
-      document.body.innerHTML = '<h1>Selamat, anda cocok masuk fsjs</h1>'
+      // document.body.innerHTML = '<h1>Selamat, anda cocok masuk fsjs</h1>'
+      window.location = './halamanskor.html?masuk=js&pesan=Selamat, anda cocok masuk fsjs'
     } else if (scoreDs > scoreJs) {
-      document.body.innerHTML = '<h1>Selamat, anda cocok masuk ds</h1>'
-    } else if (scoreDs === score) {
-      document.body.innerHTML = '<h1>Selamat, anda cocok masuk fsjs ataupun ds</h1>'
+      // document.body.innerHTML = '<h1>Selamat, anda cocok masuk ds</h1>'
+      window.location = './halamanskor.html?masuk=ds&pesan=Selamat, anda cocok masuk Data Science'
+    } else if (scoreDs === scoreJs) {
+      window.location = './halamanskor.html?masuk=semua&pesan=Selamat, anda cocok masuk fsjs ataupun ds'
+      // document.body.innerHTML = '<h1>Selamat, anda cocok masuk fsjs ataupun ds</h1>'
     }
   }
 }
